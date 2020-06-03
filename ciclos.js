@@ -29,13 +29,13 @@ function eliminar(cardId){
         console.log(index)
         Arrayabc.splice(index, 1) 
         cards()
- 
+
 	} else {
         console.log('No se encuentra en el array')
-       
+
 	}
 }
-    
+
 
 
 function cards() {
