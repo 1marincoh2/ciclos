@@ -4,18 +4,54 @@
     <title>DOM INPUT </title>
 </head>
 <body>
+  <input type="number" id="myNumber" value="">
+  <button onclick="myFunction2()">Try it</button>
+
+  <form>
+  <input type="radio" id="hombre" name="gender" value="si">
+  <label for="hombre">hombre</label><br>
+  <input type="radio" id="mujer" name="gender" value="no">
+  <label for="mujer">mujer</label><br>
+  <input type="radio" id="niñoyniña" name="gender" value="other">
+  <label for="niñoyniña">niñoyniña</label>
+</form> 
+
+      <input type="range" id="miRango" value="90"> 
+      <button onclick="elrango()">elrango</button>
     
+  <form action="/home/alberto/Documents/misproyectos2/ciclos/ciclos.html" >
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+    <input type="submit" value="Submit">
+  </form> 
 
     <input type="text" id="ciclos" value="">
     <button onclick="pruebadeinput()">ciclos</button>
-    <p id="demo"></p>
-    
-     <script>
+
+
+     <script> 
+function myFunction2() {
+  var Z = document.getElementById("myNumber").value;
+  console.log(Z);
+}
+ 
+
+function elrango() {
+  var y = document.getElementById("miRango").value;
+  console.log(y);
+}
+
     function pruebadeinput() {
       var x = document.getElementById("ciclos").value;
-      console.log( document.getElementById("demo").innerHTML = x);
+      console.log( x);
      
     }
+
+   
+
+
     </script>
  
 </body>
